@@ -1,12 +1,18 @@
 set tabstop=4
 set expandtab
 set shiftwidth=4
-set nu
-set noai
+set ai
 set ic
+set nonu
+set ignorecase
+set smartcase
+set expandtab
+set shiftround
+set visualbell " dont't beep
+set noerrorbells " don't beep
+set mouse=a
 
 :syntax on
-:colorscheme railscasts
 
 augroup cch
 autocmd! cch
@@ -15,5 +21,3 @@ augroup END
 
 set cursorline
 highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
-
-
